@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProAssistant - Підбір Асистентів</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preload" href="../images/people.png" as="image">
+    <link rel="preload" href="../images/logo.png" as="image">
+    <meta name="description" content="Професійний підбір асистентів для бізнесу від Дарії Клименко">
+    <meta name="theme-color" content="#1a4d3a">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Контейнер для уведомлений -->
+    <div class="notifications-container" id="notificationsContainer"></div>
+    
+    <div class="container">
+        <!-- Главный экран -->
+        <section class="hero">
+            <img src="../images/logo.png" alt="ProAssistant" class="logo">
+            <h1>
+                <span class="typing-text" id="typingText"></span>
+                <span class="typing-cursor">|</span>
+            </h1>
+            <div class="features-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17L4 12" stroke="#00ff88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <span class="feature-text">Асистент - який звільнить ваш час для справжнього лідерства</span>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9 16.1 17 15 17H9C7.9 17 7 17.9 7 19V21" stroke="#00ff88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z" stroke="#00ff88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <span class="feature-text">Асистент - Ваш партнер і права рука, а не просто секретар</span>
+                </div>
+            </div>
+            <img src="../images/people.png" alt="Асистент" class="hero-image" id="heroImage">
+        </section>
+
+        <!-- Стрелка прокрутки -->
+        <div class="scroll-arrow" id="scrollArrow">
+            <div class="arrow-container">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <span class="arrow-text">Дізнатися більше</span>
+        </div>
+
+        <!-- Описание -->
+        <section class="description">
+            <h2>ProAssistant</h2>
+            <p>Ми допомагаємо керівникам знайти надійних асистентів, які візьмуть на себе рутину, організацію та комунікації. Ви зосереджуєтесь на стратегії — вони забезпечують порядок у деталях.</p>
+        </section>
+
+        <!-- Преимущества курса -->
+        <section class="benefits">
+            <h3>Наші асистенти — це<br><span class="highlight">профі, які вміють:</span></h3>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">01</div>
+                    <p>управляти календарем та зустрічами</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">02</div>
+                    <p>вести комунікації від вашого імені</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">03</div>
+                    <p>організовувати робочі процеси</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">04</div>
+                    <p>допомагати в особистих та бізнес-завданнях</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">05</div>
+                    <p>працювати як онлайн, так і офлайн</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Заголовок анкеты -->
+        <section class="survey-intro">
+            <div class="survey-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="#00ff88" stroke-width="2" fill="none"/>
+                    <path d="M8 9h8M8 13h6" stroke="#00ff88" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <h3>Потрібен надійний асистент<br>для вашого бізнесу?</h3>
+            <div class="survey-subtitle">
+                <span class="gradient-text">Залиште контакт</span><br>
+                <span class="author">і ми підберемо ідеального кандидата</span>
+            </div>
+        </section>
+
+        <!-- Форма контактов -->
+        <section class="quiz-section" id="quizSection">
+            <div class="quiz-container">
+                <h3 style="text-align: center; margin-bottom: 20px; color: white;">Залиште контакт для зв'язку</h3>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="contact-fields">
+                        <input type="text" name="telegram" placeholder="Ваш Telegram @username" class="quiz-input">
+                        <input type="tel" name="phone" placeholder="Номер телефону +380XXXXXXXXX" class="quiz-input">
+                        <input type="email" name="email" placeholder="Email адреса" class="quiz-input">
+                    </div>
+                    
+                    <button type="submit" class="quiz-btn">Відправити заявку</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Кнопка старт -->
+        <button class="start-btn" id="startBtn">Підібрати асистента</button>
+    </div>
+
+    <!-- Плавающие контакты -->
+    <div class="floating-contacts">
+        <a href="https://t.me/klymenkodariia" target="_blank" class="contact-btn telegram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.13-.31-1.09-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" fill="currentColor"/>
+            </svg>
+        </a>
+        
+        <a href="viber://add?number=380936612154" class="contact-btn viber">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2C6.486 2 2 6.486 2 12c0 1.846.5 3.573 1.363 5.073L2 22l5.027-1.363C8.527 21.5 10.254 22 12 22c5.514 0 10-4.486 10-10S17.514 2 12 2zm4.5 13.5c-.3.3-.7.5-1.1.5-.4 0-.8-.2-1.1-.5L12 13.2l-2.3 2.3c-.3.3-.7.5-1.1.5-.4 0-.8-.2-1.1-.5-.6-.6-.6-1.6 0-2.2L9.8 11 7.5 8.7c-.6-.6-.6-1.6 0-2.2.6-.6 1.6-.6 2.2 0L12 8.8l2.3-2.3c.6-.6 1.6-.6 2.2 0 .6.6.6 1.6 0 2.2L14.2 11l2.3 2.3c.6.6.6 1.6 0 2.2z" fill="currentColor"/>
+            </svg>
+        </a>
+        
+        <a href="https://wa.me/380936612154" target="_blank" class="contact-btn whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.051 3.488" fill="currentColor"/>
+            </svg>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
