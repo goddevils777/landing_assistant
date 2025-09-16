@@ -8,13 +8,13 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, 
-        #134e5e 0%, 
-        #71b280 20%, 
-        #00b894 40%, 
-        #00a085 60%, 
-        #008975 80%, 
-        #007366 100%);
+    background: linear-gradient(135deg,
+            #0a2f1f 0%,
+            #0f3d2e 20%,
+            #1a4d3a 40%,
+            #2d5e4a 60%,
+            #3a7b60 80%,
+            #4a9574 100%);
     min-height: 100vh;
     color: white;
     background-attachment: fixed;
@@ -58,16 +58,16 @@ body {
     width: 200px;
     height: auto;
     border-radius: 20px;
-    mask: linear-gradient(to bottom, 
-        rgba(0,0,0,1) 0%, 
-        rgba(0,0,0,0.9) 40%, 
-        rgba(0,0,0,0.6) 70%, 
-        transparent 100%);
-    -webkit-mask: linear-gradient(to bottom, 
-        rgba(0,0,0,1) 0%, 
-        rgba(0,0,0,0.9) 40%, 
-        rgba(0,0,0,0.6) 70%, 
-        transparent 100%);
+    mask: linear-gradient(to bottom,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.9) 40%,
+            rgba(0, 0, 0, 0.6) 70%,
+            transparent 100%);
+    -webkit-mask: linear-gradient(to bottom,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.9) 40%,
+            rgba(0, 0, 0, 0.6) 70%,
+            transparent 100%);
     filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.3));
     opacity: 0.85;
     transition: transform 0.3s ease;
@@ -221,7 +221,7 @@ body {
 /* Плавающие контакты */
 .floating-contacts {
     position: fixed;
-    left: 20px;
+    right: 20px;
     bottom: 20px;
     display: flex;
     flex-direction: column;

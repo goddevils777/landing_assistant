@@ -34,9 +34,9 @@ function sanitizeInput(str) {
 function fadeInText() {
     const typingElement = document.getElementById('typingText');
     const textParts = [
-        { text: "ТОПовий підбір", class: "", delay: 100 },
+        { text: "💎 ТОПовий підбір", class: "", delay: 100 },
         { text: "АСИСТЕНТІВ", class: "accent", delay: 1200 },
-        { text: " в Україні", class: "", delay: 2400 }
+        { text: " в Україні 🇺🇦", class: "", delay: 2400 }
     ];
     
     typingElement.innerHTML = '';
